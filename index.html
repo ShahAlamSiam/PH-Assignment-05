@@ -10,7 +10,7 @@
 <body>
     <header class="mb-16 bg-gray-100">
         <nav>
-            <div class="navbar mx-auto py-6 w-11/12">
+            <div class="navbar mx-auto py-6 w-10/12">
                 <div class="navbar-start">
                   <!-- <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -45,7 +45,7 @@
                   <button class="btn btn-active text-lg py-1 px-8 bg-[#a3e635]">Blog</button>
                 </div>
                 <!-- <div class="navbar-center hidden lg:flex"> -->
-                <div class="navbar-center lg:flex">
+                <div class="navbar-center hidden lg:flex">
                   <!-- <ul class="menu menu-horizontal px-1">
                     <li><a>Item 1</a></li>
                     <li>
@@ -74,7 +74,46 @@
     </header>
 
     <main>
+        <!-- buttons only -->
+        <section class="w-10/12 mb-8 mx-auto flex justify-center space-x-6">
+            <button class="btn">Donation</button>
+            <button class="btn">History</button>
+        </section>
 
+        
+        <!-- card-1 -->
+        <section class="w-10/12 py-6 mx-auto flex flex-col lg:flex-row  lg:space-x-6 shadow-xl items-center">
+
+
+            <div class="w-full">
+                <img class="bg-contain bg-center w-full" src="assets/noakhali.png" alt="">
+            </div>
+
+            <!-- section Card-->
+            <div class="w-full mt-6 lg:mt-0 lg:pr-5 flex flex-col">
+                <a class="btn btn-ghost text-xl mb-4 justify-center lg:justify-start">
+                    <img src="assets/coin.png" alt="">
+                    <span>10000</span> BDT
+                </a>
+
+                <h1 class="text-2xl text-center lg:text-left font-bold mb-6 ">
+                    Donate for Flood at Noakhali, Bangladesh
+                </h1>
+                <p class="text-xl text-center lg:text-left mb-9"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                <!-- <input type="text" placeholder="Write Donation Amount"> -->
+                <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mb-7 " />
+                <br>
+                <button class="btn btn-active text-xl font-semibold w-full py-1 px-8 bg-[#a3e635]">Donate Now</button>
+            </div>
+        </section>
+        <!---->
+        <section class="w-11/12 mx-auto">
+
+        </section>
+        <!---->
+        <section class="w-11/12 mx-auto">
+
+        </section>
     </main>
 </body>
 </html>
