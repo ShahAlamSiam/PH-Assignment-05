@@ -46,4 +46,6 @@ document
                                          ${timeZone}</p>
                                     `;
     document.getElementById("history").appendChild(div);
+
+    alert("Your donation was successful");
   });

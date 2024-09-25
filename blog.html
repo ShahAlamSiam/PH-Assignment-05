@@ -1,82 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-50">
+  </head>
+  <body class="bg-gray-50">
     <header class="mb-16">
-        <nav class="bg-orange-100">
-            <div class="navbar mx-auto py-6 w-10/12">
-                <div class="navbar-start">
-                  <button onclick="window.location.href = 'index.html',event.preventDefault()" class="btn btn-active text-lg py-1 px-8 bg-[#a3e635]">Home</button>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                  <a class="btn btn-ghost text-xl">
-                    <img src="assets/logo.png" alt="">
-                    Donate Bangladesh</a>
-                </div>
-                <div class="navbar-end">
-                    <a class="btn btn-ghost text-xl">
-                        <img src="assets/coin.png" alt="">
-                        <span>99999</span> BDT
-                    </a>
-                </div>
-              </div>
-        </nav>
+      <nav class="bg-orange-100">
+        <div class="navbar mx-auto py-6 w-10/12">
+          <div class="navbar-start">
+            <button
+              onclick="window.location.href = 'index.html',event.preventDefault()"
+              class="btn btn-active text-lg py-1 px-8 bg-[#a3e635]"
+            >
+              Home
+            </button>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <a class="btn btn-ghost text-xl">
+              <img src="assets/logo.png" alt="" />
+              Donate Bangladesh</a
+            >
+          </div>
+          <div class="navbar-end">
+            <a class="btn btn-ghost text-xl">
+              <img src="assets/coin.png" alt="" />
+              <span>99999</span> BDT
+            </a>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>
-       <section class="w-10/12 mx-auto">
-        <h1 class="mb-4 text-5xl font-bold">Important FAQ <i class="fa fa-question-circle" style="font-size:48px;color:red"></i></h1>
+      <section class="w-10/12 mx-auto">
+        <h1 class="mb-4 text-5xl font-bold">
+          Important FAQ
+          <i
+            class="fa fa-question-circle"
+            style="font-size: 48px; color: red"
+          ></i>
+        </h1>
 
         <!-- Accordion -->
-         <!-- Question-01 -->
+        <!-- Question-01 -->
         <div class="mb-4 collapse collapse-arrow bg-base-200">
-            <input type="radio" name="my-accordion-2" checked="checked" />
-            <div class="collapse-title text-3xl font-medium">What is Document Object Model (DOM)?</div>
-            <div class="collapse-content">
-              <p class="text-xl">Document Object Model or DOM is a programming interface that allows us to dynamically access, update, create or remove from the document.</p>
-            </div>
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <div class="collapse-title text-3xl font-medium">
+            What is Document Object Model (DOM)?
           </div>
-
-          <!-- Question-02 -->
-          <div class="mb-4 collapse collapse-arrow bg-base-200">
-            <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-3xl font-medium">How do you select an element from the DOM?</div>
-            <div class="collapse-content">
-              <p class="text-xl">There are many ways to select an element from the DOM. DOM has built-in methods for this specific task.
-                getElementByTagName(), getElementByClassName(), getElementById(), querySelector() etc are DOM methods that helps us select a DOM element.
-              </p>
-            </div>
-          </div>
-
-          <!-- Question-03 -->
-          <div class="mb-4 collapse collapse-arrow bg-base-200">
-            <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-3xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
-            <div class="collapse-content">
-              <p class="text-xl">Event delegation is a technique in JavaScript where you handle events on a parent element rather than attaching individual event handlers to its child elements. By doing this, you can take advantage of event bubbling, where events triggered on a child element will "bubble up" through its ancestors until it reaches the specified parent element.
-                It is useful because the event can be listened to on multiple elements by using just one event handler.
+          <div class="collapse-content">
+            <p class="text-xl">
+              Document Object Model or DOM is a programming interface that
+              allows us to dynamically access, update, create or remove from the
+              document.
             </p>
-            </div>
           </div>
+        </div>
 
-          <!-- Question-04 -->
-          <div class="collapse collapse-arrow bg-base-200">
-            <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-3xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
-            <div class="collapse-content ">
-              <p class="text-xl">We can manipulate an element's attributes and styles using DOM's internal methods like setAttributes(), getAttributes(), removeAttributes() etc.</p>
-            </div>
+        <!-- Question-02 -->
+        <div class="mb-4 collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-3xl font-medium">
+            How do you select an element from the DOM?
           </div>
-       </section>
+          <div class="collapse-content">
+            <p class="text-xl">
+              There are many ways to select an element from the DOM. DOM has
+              built-in methods for this specific task. getElementByTagName(),
+              getElementByClassName(), getElementById(), querySelector() etc are
+              DOM methods that helps us select a DOM element.
+            </p>
+          </div>
+        </div>
+
+        <!-- Question-03 -->
+        <div class="mb-4 collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-3xl font-medium">
+            What is event delegation in the context of the DOM, and why is it
+            useful?
+          </div>
+          <div class="collapse-content">
+            <p class="text-xl">
+              Event delegation is a technique in JavaScript where you handle
+              events on a parent element rather than attaching individual event
+              handlers to its child elements. By doing this, you can take
+              advantage of event bubbling, where events triggered on a child
+              element will "bubble up" through its ancestors until it reaches
+              the specified parent element. It is useful because the event can
+              be listened to on multiple elements by using just one event
+              handler.
+            </p>
+          </div>
+        </div>
+
+        <!-- Question-04 -->
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-3xl font-medium">
+            How do you manipulate an element's attributes and styles using the
+            DOM?
+          </div>
+          <div class="collapse-content">
+            <p class="text-xl">
+              We can manipulate an element's attributes and styles using DOM's
+              internal methods like setAttributes(), getAttributes(),
+              removeAttributes() etc.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>

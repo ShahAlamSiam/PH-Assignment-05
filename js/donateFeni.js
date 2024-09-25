@@ -45,4 +45,6 @@ document
                                          ${timeZone2}</p>
                                     `;
     document.getElementById("history").appendChild(div2);
+
+    alert("Your donation was successful");
   });
